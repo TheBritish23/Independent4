@@ -1,0 +1,22 @@
+{
+  "name": "independent4",
+  "version": "1.0.0",
+  "description": "4th Independent Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "Independent 4"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "Soroush Azizi",
+  "license": "ISC",
+  "devDependencies": {
+    "webpack": "4.39.3",
+    "webpack-cli": "^3.3.8"
+  }
+}
