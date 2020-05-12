@@ -14,13 +14,15 @@
     "none"
   ],
   "author": "Soroush Azizi",
-  "license": "ISC",
+  "license": "MIT",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
     "clean": "^4.0.2",
     "css-loader": "^3.2.0",
     "eslint": "^6.3.0",
     "eslint-loader": "^3.0.0",
     "html-webpack-plugin": "^3.0.0",
+    "jest": "^24.9.0",
     "style-loader": "^1.0.0",
     "uglifyjs-webpack-plugin": "^2.2.0",
     "webpack": "4.39.3",
