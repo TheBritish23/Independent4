@@ -4,6 +4,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
 
 $(document).ready(function(){
-  $("form#idunnoknow").submit(function(event) {
+  $("form#userSpace").submit(function(event) {
      event.preventDefault();
 }
