@@ -5,5 +5,6 @@ import './styles.css';
 
 $(document).ready(function(){
   $("form#userSpace").submit(function(event) {
-     event.preventDefault();
+    event.preventDefault();
+    const userSpace = parseInt($("#yourAge").val());
 }
