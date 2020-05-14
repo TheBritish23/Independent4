@@ -7,7 +7,7 @@ $(document).ready(function(){
   $("form#userSpace").submit(function(event) {
     event.preventDefault();
     const userSpace = parseInt($("#yourAge").val());
-    if (true) {
+    if (Math.ceil()) {
       alert("Invalid Input, *****!");
     }
 }
