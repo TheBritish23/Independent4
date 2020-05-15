@@ -39,6 +39,8 @@ _3. Import and Export functions work_
 
 _4. Let and Const define variables_
 
+_5. Each function multiplies by the set number_
+
 ### License
 
 MIT License
