@@ -37,6 +37,8 @@ _2. Block and After statements function_
 
 _3. Import and Export functions work_
 
+_4. Let and Const define variables_
+
 ### License
 
 MIT License
