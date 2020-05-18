@@ -12,5 +12,8 @@ $(document).ready(function(){
     }
 } else {
 const newAge = new Years(userAge);
-
+$("#mercuryYears").text(newAge.mercuryYears());
+$("#venusYears").text(newAge.venusYears());
+$("#marsYears").text(newAge.marsYears());
+$("#jupiterYears").text(newAge.jupiterYears());
 }
