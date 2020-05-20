@@ -7,11 +7,11 @@ import {userAge} from "./age.js";
 $(document).ready(function(){
   $("form#Age1").submit(function(event) {
     event.preventDefault();
-    const userSpace = parseInt($("#userAge").val());
+    const userAge = parseInt($("#userAge").val());
     if (Math.ceil(userAge)-userAge) {
       alert("Invalid Input, *****!");
 } else {
-  const newAge = new Years(userAge);
+  const newAge = new age(userAge);
   $("#mercuryYears").text(newAge.mercuryYears());
   $("#venusYears").text(newAge.venusYears());
   $("#marsYears").text(newAge.marsYears());
