@@ -16,4 +16,6 @@ $(document).ready(function(){
   $("#venusYears").text(newAge.venusYears());
   $("#marsYears").text(newAge.marsYears());
   $("#jupiterYears").text(newAge.jupiterYears());
+  if (userAge < 99) {
+
   }
