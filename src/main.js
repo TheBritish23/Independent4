@@ -10,11 +10,10 @@ $(document).ready(function(){
     const userSpace = parseInt($("#userAge").val());
     if (Math.ceil(userAge)-userAge) {
       alert("Invalid Input, *****!");
-    }
 } else {
-const newAge = new Years(userAge);
-$("#mercuryYears").text(newAge.mercuryYears());
-$("#venusYears").text(newAge.venusYears());
-$("#marsYears").text(newAge.marsYears());
-$("#jupiterYears").text(newAge.jupiterYears());
-}
+  const newAge = new Years(userAge);
+  $("#mercuryYears").text(newAge.mercuryYears());
+  $("#venusYears").text(newAge.venusYears());
+  $("#marsYears").text(newAge.marsYears());
+  $("#jupiterYears").text(newAge.jupiterYears());
+  }
