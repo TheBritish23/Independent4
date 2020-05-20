@@ -5,7 +5,7 @@ import './styles.css';
 import {userAge} from "./age.js";
 
 $(document).ready(function(){
-  $("form#userSpace").submit(function(event) {
+  $("form#Age1").submit(function(event) {
     event.preventDefault();
     const userSpace = parseInt($("#userAge").val());
     if (Math.ceil(userAge)-userAge) {
@@ -17,5 +17,10 @@ $(document).ready(function(){
   $("#marsYears").text(newAge.marsYears());
   $("#jupiterYears").text(newAge.jupiterYears());
   if (userAge < 99) {
-
+    $("#young").text(newAge.lifeExpectancy(userAge));
+  }else{
+    return $("#old").text(newAge.lifeExpectancy(userAge));
   }
+}
+});
+});
