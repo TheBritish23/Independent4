@@ -12,14 +12,14 @@ $(document).ready(function(){
       alert("Invalid Input, *****!");
     } else {
       const newAge = new age(userAge);
-      $("#mercuryYears").text(newAge.mercuryYears());
-      $("#venusYears").text(newAge.venusYears());
-      $("#marsYears").text(newAge.marsYears());
-      $("#jupiterYears").text(newAge.jupiterYears());
+      $("#mercuryYears").text(userAge.mercuryYears());
+      $("#venusYears").text(userAge.venusYears());
+      $("#marsYears").text(userAge.marsYears());
+      $("#jupiterYears").text(userAge.jupiterYears());
       if (userAge < 99) {
-        $("#young").text(newAge.lifeExpectancy(userAge));
+        $("#young").text(userAge.lifeExpectancy(userAge));
       }else{
-        return $("#old").text(newAge.lifeExpectancy(userAge));
+        return $("#old").text(userAge.lifeExpectancy(userAge));
       }
     }
   });
