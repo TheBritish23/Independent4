@@ -19,8 +19,8 @@ $(document).ready(function(){
       if (userAge < 99) {
         $("#young").text(newAge.lifeExpectancy(userAge));
       }else{
-    return $("#old").text(newAge.lifeExpectancy(userAge));
-  }
+        return $("#old").text(newAge.lifeExpectancy(userAge));
+      }
     }
   });
 });
