@@ -1,5 +1,4 @@
-export function userAge(age) {
-  console.log(age);
+export function age(age) {
   this.mercuryYears = age;
   this.venusYears = age;
   this.mercuryYears = age;
