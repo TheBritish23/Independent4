@@ -1,6 +1,6 @@
-export function age(userAge) {
-  this.mercuryYears = 0;
-  this.venusYears = 0;
-  this.mercuryYears = 0;
-  this.jupiterYears = 0;
+export function userAge(age) {
+  this.mercuryYears = age;
+  this.venusYears = age;
+  this.mercuryYears = age;
+  this.jupiterYears = age;
 }
