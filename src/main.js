@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import {age} from "./age.js";
+import {userAge} from "./age.js";
 
 $(document).ready(function(){
   $("form#Age1").submit(function(event) {
@@ -12,14 +12,14 @@ $(document).ready(function(){
       alert("Invalid Input, *****!");
     } else {
       const age = new age(userAge);
-      $("#mercuryYears").text(userAge.mercuryYears());
-      $("#venusYears").text(userAge.venusYears());
-      $("#marsYears").text(userAge.marsYears());
-      $("#jupiterYears").text(userAge.jupiterYears());
+      $("#mercuryYears").text(age.mercuryYears());
+      $("#venusYears").text(age.venusYears());
+      $("#marsYears").text(age.marsYears());
+      $("#jupiterYears").text(age.jupiterYears());
       if (userAge < 99) {
-        $("#young").text(userAge.lifeExpectancy(age));
+        $("#young").text(age.lifeExpectancy(userAge));
       }else{
-        return $("#old").text(userAge.lifeExpectancy(age));
+        return $("#old").text(age.lifeExpectancy(userAge));
       }
     }
   });
