@@ -11,15 +11,15 @@ $(document).ready(function(){
     if (Math.ceil(userAge)-userAge) {
       alert("Invalid Input, *****!");
     } else {
-      const newAge = new age(userAge);
+      const age = new age(userAge);
       $("#mercuryYears").text(userAge.mercuryYears());
       $("#venusYears").text(userAge.venusYears());
       $("#marsYears").text(userAge.marsYears());
       $("#jupiterYears").text(userAge.jupiterYears());
       if (userAge < 99) {
-        $("#young").text(userAge.lifeExpectancy(userAge));
+        $("#young").text(userAge.lifeExpectancy(age));
       }else{
-        return $("#old").text(userAge.lifeExpectancy(userAge));
+        return $("#old").text(userAge.lifeExpectancy(age));
       }
     }
   });
