@@ -2,7 +2,7 @@ import $ from 'jquery';
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './styles.css';
-import {userAge} from "./age.js";
+import {age} from "./age.js";
 
 $(document).ready(function(){
   $("form#Age1").submit(function(event) {
@@ -11,7 +11,7 @@ $(document).ready(function(){
     if (Math.ceil(userAge)-userAge) {
       alert("Invalid Input, *****!");
     } else {
-      const age = new age(userAge);
+      const age = new userAge(age);
       $("#mercuryYears").text(age.mercuryYears());
       $("#venusYears").text(age.venusYears());
       $("#marsYears").text(age.marsYears());
