@@ -13,8 +13,13 @@ mercuryYears(){
   const userAge = Math.round(this.age / this.planet);
   return userAge;
   }
-mercuryYears(){
+venusYears(){
   this.age = .62
+  const userAge = Math.round(this.age / this.planet);
+  return userAge;
+  }
+mercuryYears(){
+  this.age = 1.88
   const userAge = Math.round(this.age / this.planet);
   return userAge;
   }
