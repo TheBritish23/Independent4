@@ -1,7 +1,7 @@
 export function userAge(age) {
   this.mercuryYears = age;
   this.venusYears = age;
-  this.mercuryYears = age;
+  this.marsYears = age;
   this.jupiterYears = age;
 }
 
@@ -18,8 +18,13 @@ venusYears(){
   const userAge = Math.round(this.age / this.planet);
   return userAge;
   }
-mercuryYears(){
+marsYears(){
   this.age = 1.88
+  const userAge = Math.round(this.age / this.planet);
+  return userAge;
+  }
+jupiterYears(){
+  this.age = 11.86
   const userAge = Math.round(this.age / this.planet);
   return userAge;
   }
