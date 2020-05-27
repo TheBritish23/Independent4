@@ -8,7 +8,7 @@ $(document).ready(function(){
   $("form#Age1").submit(function(event) {
     event.preventDefault();
     const userAge = parseInt($("#userAge").val());
-    if (Math.ceil(userAge)-userAge) {
+    if (Math.ceil(userAge)-userAge !==0 || userAge<0){
       alert("Invalid Input, *****!");
     } else {
       const age = new userAge(age);
