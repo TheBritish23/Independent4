@@ -1,13 +1,10 @@
-export function userAge(age) {
-  this.mercuryYears = age;
-  this.venusYears = age;
-  this.marsYears = age;
-  this.jupiterYears = age;
-}
-
 export class userAge{
-
+  constructor (planet) {
+    this.age = age;
+    this.planet = planet;
+  }
 }
+
 mercuryYears(){
   this.age = .24
   const userAge = Math.round(this.age / this.planet);
