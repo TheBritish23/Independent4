@@ -4,7 +4,6 @@ export function userAge(age) {
   this.marsYears = age;
   this.jupiterYears = age;
 }
-
 mercuryYears(){
   this.age = .24
   const userAge = Math.round(this.age);
