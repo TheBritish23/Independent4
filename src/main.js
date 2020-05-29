@@ -12,10 +12,10 @@ $(document).ready(function(){
       alert("Invalid Input, *****!");
     } else {
       const age = new userAge(age);
-      $("#mercuryYears").text(age.mercuryYears());
-      $("#venusYears").text(age.venusYears());
-      $("#marsYears").text(age.marsYears());
-      $("#jupiterYears").text(age.jupiterYears());
+      $("#mercuryYears").text(age.userAge());
+      $("#venusYears").text(age.userAge());
+      $("#marsYears").text(age.userAge());
+      $("#jupiterYears").text(age.userAge());
       if (userAge < 99) {
         $("#young").text(age.lifeExpectancy(userAge));
       }else{
