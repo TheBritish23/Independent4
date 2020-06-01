@@ -7,3 +7,8 @@ test ('The number you put in is multiplied by the number of the fuction'() => {
   console.log(age);
   expect(age.mercuryYears()).toEqual(412);
  });
+ test ('The number you put in is multiplied by the number of the fuction'() => {
+   var userAge = new userAge(99);
+   console.log(age);
+   expect(age.venusYears()).toEqual(161);
+  });
