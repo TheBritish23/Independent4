@@ -4,7 +4,7 @@
   "description": "4th Independent Project",
   "main": "index.js",
   "scripts": {
-    "test": "age.test.js",
+    "test": "test.js",
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development"
   },
