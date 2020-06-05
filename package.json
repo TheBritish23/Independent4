@@ -4,7 +4,7 @@
   "description": "4th Independent Project",
   "main": "index.js",
   "scripts": {
-    "test": "test.js",
+    "test": "jest --colors",
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development"
   },

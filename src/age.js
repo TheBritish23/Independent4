@@ -5,7 +5,7 @@ export function userAge(age) {
   this.jupiterYears = age;
 }
 
-// userAge.prototype.mercuryYears = function(){
-//   let mercuryYears = Math.floor(this.age);
-//   return mercuryYears;
-// };
+userAge.prototype.mercuryYears = function(){
+  let mercuryYears = Math.floor(this.age);
+  return mercuryYears;
+};
