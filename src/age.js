@@ -23,5 +23,6 @@ userAge.prototype.jupiterYears = function(){
 };
 
 userAge.prototype.lifeExpectancy = function(){
-
+  let mercuryExpected = Math.floor(this.life / .24);
+  let venusExpected = Math.floor(this.life / .62);
 }:
