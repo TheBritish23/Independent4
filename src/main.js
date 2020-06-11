@@ -23,4 +23,11 @@ $(document).ready(function(){
       }
     }
   });
+
+  $("#expectancyForm").submit(function(event) {
+    event.preventDefault();
+    var lifeExpectancy = $('#expectancyInput').val();
+    var yourAge = $('#yourAgeInput').val();
+    var calculatorResult =  new ExpectancyCalculator(inputtedLifeExpectancy, yourAge);
+    event.preventDefault();
 });

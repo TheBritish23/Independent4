@@ -21,3 +21,10 @@ userAge.prototype.jupiterYears = function(){
   let jupiterYears = Math.floor(this.age);
   return jupiterYears;
 };
+
+lifeExpectancy(){
+   if(this.age < 79){
+     this.age = 79 - this.age;
+   } else if(this.age > 79){
+     this.age = this.age - 79;
+   }return this.age;
