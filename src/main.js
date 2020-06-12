@@ -21,6 +21,6 @@ $(document).ready(function(){
       } else {
         return $("#old").text(age.lifeExpectancy(userAge));
       }
-     }
-    });
-   });
+    }
+  });
+});
