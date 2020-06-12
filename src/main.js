@@ -18,16 +18,9 @@ $(document).ready(function(){
       $("#jupiterYears").text(age.userAge());
       if (userAge < 99) {
         $("#young").text(age.lifeExpectancy(userAge));
-      }else{
+      } else {
         return $("#old").text(age.lifeExpectancy(userAge));
       }
-    }
-  });
-
-  $("#expectancyForm").submit(function(event) {
-    event.preventDefault();
-    var lifeExpectancy = $('#expectancyInput').val();
-    var yourAge = $('#yourAgeInput').val();
-    var calculatorResult =  new ExpectancyCalculator(inputtedLifeExpectancy, yourAge);
-    event.preventDefault();
-});
+     }
+    });
+   });

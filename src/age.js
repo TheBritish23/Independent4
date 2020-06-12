@@ -22,9 +22,9 @@ userAge.prototype.jupiterYears = function(){
   return jupiterYears;
 };
 
-userAge.prototype.lifeExpectancy = function(){
-  let mercuryExpected = Math.floor(this.life / .24);
-  let venusExpected = Math.floor(this.life / .62);
-  let marsExpected = Math.floor(this.life / 1.88);
-  let jupiterExpected = Math.floor(this.life / 11.86);
-}:
+// userAge.prototype.lifeExpectancy = function(){
+//   let mercuryExpected = Math.floor(this.life / .24);
+//   let venusExpected = Math.floor(this.life / .62);
+//   let marsExpected = Math.floor(this.life / 1.88);
+//   let jupiterExpected = Math.floor(this.life / 11.86);
+// }:
