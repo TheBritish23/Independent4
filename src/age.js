@@ -22,9 +22,23 @@ userAge.prototype.jupiterYears = function(){
   return jupiterYears;
 };
 
-userAge.prototype.lifeExpectancy = function(){
-  let mercuryYears = Math.floor(this.life / .24);
-  let venusYears = Math.floor(this.life / .62);
-  let marsYears = Math.floor(this.life / 1.88);
-  let jupiterYears = Math.floor(this.life / 11.86);
+export function ExpectancyCalculator(averageLifeExpectancy, yourAge) {
+  this.averageLifeExpectancy = averageLifeExpectancy;
+  this.yourAge = yourAge;
+}
+ExpectancyCalculator.prototype.lifeExpectancyInMercury = function() {
+  let lifeExpectancyInMercury = Math.floor(this.averageLifeExpectancy / mercuryYears - this.yourAge / mercuryYears);
+  return lifeExpectancyInMercury;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInVenus = function() {
+  let lifeExpectancyInVenus = Math.floor(this.averageLifeExpectancy / venusYears - this.yourAge / venusYears);
+  return lifeExpectancyInVenus;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInMars = function() {
+  let lifeExpectancyInMars = Math.floor(this.averageLifeExpectancy / marsYears - this.yourAge / marsYears);
+  return lifeExpectancyInMars;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInJupiter = function() {
+  let lifeExpectancyInJupiter = Math.floor(this.averageLifeExpectancy / jupiterYears - this.yourAge / jupiterYears);
+  return lifeExpectancyInJupiter;
 };
