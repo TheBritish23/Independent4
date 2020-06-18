@@ -22,23 +22,23 @@ userAge.prototype.jupiterYears = function(){
   return jupiterYears;
 };
 
-// export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
-//   this.averageLifeExpectancy = averageLifeExpectancy;
-//   this.age = age;
-// }
-// ExpectancyCalculator.prototype.lifeExpectancyInMercury = function() {
-//   let lifeExpectancyInMercury = Math.floor(this.averageLifeExpectancy / mercuryYears - this.userAge / mercuryYears);
-//   return lifeExpectancyInMercury;
-// };
-// ExpectancyCalculator.prototype.lifeExpectancyInVenus = function() {
-//   let lifeExpectancyInVenus = Math.floor(this.averageLifeExpectancy / venusYears - this.userAge / venusYears);
-//   return lifeExpectancyInVenus;
-// };
-// ExpectancyCalculator.prototype.lifeExpectancyInMars = function() {
-//   let lifeExpectancyInMars = Math.floor(this.averageLifeExpectancy / marsYears - this.userAge / marsYears);
-//   return lifeExpectancyInMars;
-// };
-// ExpectancyCalculator.prototype.lifeExpectancyInJupiter = function() {
-//   let lifeExpectancyInJupiter = Math.floor(this.averageLifeExpectancy / jupiterYears - this.userAge / jupiterYears);
-//   return lifeExpectancyInJupiter;
-// };
+export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
+  this.averageLifeExpectancy = averageLifeExpectancy;
+  this.userAge = age;
+}
+ExpectancyCalculator.prototype.lifeExpectancyInMercury = function() {
+  let lifeExpectancyInMercury = Math.floor(this.averageLifeExpectancy / mercuryYears - this.userAge / mercuryYears);
+  return lifeExpectancyInMercury;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInVenus = function() {
+  let lifeExpectancyInVenus = Math.floor(this.averageLifeExpectancy / venusYears - this.userAge / venusYears);
+  return lifeExpectancyInVenus;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInMars = function() {
+  let lifeExpectancyInMars = Math.floor(this.averageLifeExpectancy / marsYears - this.userAge / marsYears);
+  return lifeExpectancyInMars;
+};
+ExpectancyCalculator.prototype.lifeExpectancyInJupiter = function() {
+  let lifeExpectancyInJupiter = Math.floor(this.averageLifeExpectancy / jupiterYears - this.userAge / jupiterYears);
+  return lifeExpectancyInJupiter;
+};
