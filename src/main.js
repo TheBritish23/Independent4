@@ -17,9 +17,9 @@ $(document).ready(function(){
       $("#marsYears").text(age.userAge());
       $("#jupiterYears").text(age.userAge());
       if (userAge < 99) {
-        $("#young").text(age.lifeExpectancy(userAge));
+        $("#young").text(age.averagelifeExpectancy(userAge));
       } else {
-        return $("#old").text(age.lifeExpectancy(userAge));
+        return $("#old").text(age.averagelifeExpectancy(userAge));
       }
     }
   });
