@@ -24,7 +24,7 @@ userAge.prototype.jupiterYears = function(){
 
 export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
   this.averageLifeExpectancy = averageLifeExpectancy;
-  this.userAge = age;
+  this.userAge = userAge;
 }
 ExpectancyCalculator.prototype.lifeExpectancyInMercury = function() {
   let lifeExpectancyInMercury = Math.floor(this.averageLifeExpectancy / mercuryYears - this.userAge / mercuryYears);
