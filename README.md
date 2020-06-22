@@ -6,7 +6,7 @@
 
 ## Description
 
-_Everything in Object-oriented javascript here._
+_Everything in Object-oriented Javascript here._
 
 ## Setup/Installation Requirements
 
@@ -16,6 +16,7 @@ _Everything in Object-oriented javascript here._
 * _4. Make supporting HTML, JS, eslinter, babel, and CSS files_
 * _5. Download all NPM installs and Webpacks_
 * _6. Download Git_
+* _7. Makes sure test with jest to make sure it works_
 
 ## Known Bugs
 
