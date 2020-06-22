@@ -13,7 +13,7 @@ _Everything in Object-oriented javascript here._
 * _1. Download Git Repository_
 * _2. Create local and Remote Repository_
 * _3. Create Atom file_
-* _4. Make supporting HTML, JS, and CSS files_
+* _4. Make supporting HTML, JS, eslinter, babel, and CSS files_
 * _5. Download all NPM installs and Webpacks_
 * _6. Download Git_
 
