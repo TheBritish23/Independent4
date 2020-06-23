@@ -44,5 +44,5 @@ describe('HowLongUGotLeftToLive', () => {
   test('should return number of Jupiter years past expectancy if Earth user enters age that is higher than life expectancy', () => {
       var calculate = new userAge(100, 99);
       console.log(calculate);
-      expect(calculate.lifeExpectancyInJupiter()).toEqual(9);
+      expect(calculate.lifeExpectancyInJupiter()).toEqual(10);
     });
