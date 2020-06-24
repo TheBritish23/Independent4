@@ -26,23 +26,24 @@ test('should correctly return inputted age in Jupiter years', () => {
 
 describe('HowLongUGotLeftToLive', () => {
 
-  test('should return number of Mercury years past expectancy if Earth user enters age that is higher than life expectancy', () => {
-      var calculate = new userAge(100, 99);
-      console.log(calculate);
-      expect(calculator.lifeExpectancyInMercury()).toEqual(618);
-    });
-  test('should return number of Venus years past expectancy if Earth user enters age that is higher than life expectancy', () => {
-      var calculate = new userAge(100, 99);
-      console.log(calculate);
-      expect(calculate.lifeExpectancyInVenus()).toEqual(149);
-    });
-  test('should return number of Mars years past expectancy if Earth user enters age that is higher than life expectancy', () => {
-      var calculate = new userAge(100, 99);
-      console.log(calculate);
-      expect(calculate.lifeExpectancyInMars()).toEqual(53);
-    });
-  test('should return number of Jupiter years past expectancy if Earth user enters age that is higher than life expectancy', () => {
-      var calculate = new userAge(100, 99);
-      console.log(calculate);
-      expect(calculate.lifeExpectancyInJupiter()).toEqual(10);
-    });
+test('should return number of Mercury years past expectancy if Earth user enters age that is higher than life expectancy', () => {
+    var calculate = new userAge(100, 99);
+    console.log(calculate);
+    expect(calculator.lifeExpectancyInMercury()).toEqual(618);
+  });
+test('should return number of Venus years past expectancy if Earth user enters age that is higher than life expectancy', () => {
+    var calculate = new userAge(100, 99);
+    console.log(calculate);
+    expect(calculate.lifeExpectancyInVenus()).toEqual(149);
+  });
+test('should return number of Mars years past expectancy if Earth user enters age that is higher than life expectancy', () => {
+    var calculate = new userAge(100, 99);
+    console.log(calculate);
+    expect(calculate.lifeExpectancyInMars()).toEqual(53);
+  });
+test('should return number of Jupiter years past expectancy if Earth user enters age that is higher than life expectancy', () => {
+    var calculate = new userAge(100, 99);
+    console.log(calculate);
+    expect(calculate.lifeExpectancyInJupiter()).toEqual(9);
+  });
+});
