@@ -24,7 +24,7 @@ test('should correctly return inputted age in Jupiter years', () => {
  });
 });
 
-describe('HowLongUGotLeftToLive', () => {
+describe('LifeExpectancy', () => {
 
 test('should return number of Mercury years past expectancy if Earth user enters age that is higher than life expectancy', () => {
     var calculate = new userAge(100, 99);
