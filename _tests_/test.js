@@ -1,4 +1,4 @@
-// import { userAge } from './../src/age.js';
+import { userAge } from './../src/age.js';
 
 // describe('userAge', () => {
 //
