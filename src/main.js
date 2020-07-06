@@ -8,6 +8,7 @@ $(document).ready(function(){
     event.preventDefault();
     const userAge = parseInt($("#userAge").val());
     if (Math.ceil(userAge)-userAge !==0 || userAge<0){
+    //alert("Invalid Input, *****!");
     } else {
       const age = new userAge(age);
       $("#mercuryYears").text(age.userAge());
