@@ -4,22 +4,22 @@ export function userAge(age) {
   this.marsYears = age;
   this.jupiterYears = age;
 }
-  mercuryAge(){
+  mercuryAge() {
     this.planet = .24;
     const userAge = Math.round(this.age);
     return userAge;
   }
-  venusAge(){
+  venusAge() {
     this.planet = .62;
     const userAge = Math.round(this.age);
     return userAge;
   }
-  marsAge(){
+  marsAge() {
     this.planet = 1.88;
     const userAge = Math.round(this.age);
     return userAge;
   }
-  jupiterAge(){
+  jupiterAge() {
     this.planet = 11.86;
     const userAge = Math.round(this.age);
     return userAge;
