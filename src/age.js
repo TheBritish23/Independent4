@@ -5,43 +5,43 @@ export function userAge(age) {
   this.jupiterYears = age;
 }
 
-  mercuryAge(); {
-    this.planet = .24;
-    const userAge = Math.round(this.age);
-    return userAge;
-  };
-  venusAge(); {
-    this.planet = .62;
-    const userAge = Math.round(this.age);
-    return userAge;
-  };
-  marsAge(); {
-    this.planet = 1.88;
-    const userAge = Math.round(this.age);
-    return userAge;
-  };
-  jupiterAge(); {
-    this.planet = 11.86;
-    const userAge = Math.round(this.age);
-    return userAge;
-  };
+mercuryAge(); {
+  this.planet = .24;
+  const userAge = Math.round(this.age);
+  return userAge
+};
+venusAge(); {
+  this.planet = .62;
+  const userAge = Math.round(this.age);
+  return userAge
+};
+marsAge(); {
+  this.planet = 1.88;
+  const userAge = Math.round(this.age);
+  return userAge
+};
+jupiterAge(); {
+  this.planet = 11.86;
+  const userAge = Math.round(this.age);
+  return userAge
+};
 
-// userAge.prototype.mercuryYears = function(){
-//   let mercuryYears = Math.floor(this.age);
-//   return mercuryYears;
-// };
-// userAge.prototype.venusYears = function(){
-//   let venusYears = Math.floor(this.age);
-//   return venusYears;
-// };
-// userAge.prototype.marsYears = function(){
-//   let marsYears = Math.floor(this.age);
-//   return marsYears;
-// };
-// userAge.prototype.jupiterYears = function(){
-//   let jupiterYears = Math.floor(this.age);
-//   return jupiterYears;
-// };
+userAge.prototype.mercuryYears = function(){
+  let mercuryYears = Math.floor(this.age);
+  return mercuryYears;
+};
+userAge.prototype.venusYears = function(){
+  let venusYears = Math.floor(this.age);
+  return venusYears;
+};
+userAge.prototype.marsYears = function(){
+  let marsYears = Math.floor(this.age);
+  return marsYears;
+};
+userAge.prototype.jupiterYears = function(){
+  let jupiterYears = Math.floor(this.age);
+  return jupiterYears;
+};
 
 export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
   this.averageLifeExpectancy = averageLifeExpectancy;
