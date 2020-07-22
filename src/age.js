@@ -1,34 +1,33 @@
 export function userAge(age) {
-  this.mercuryYears = age;
-  this.venusYears = age;
-  this.marsYears = age;
-  this.jupiterYears = age;
+  this.mercuryYears = .24;
+  this.venusYears = .62;
+  this.marsYears = 1.88;
+  this.jupiterYears = 11.86;
 }
 
-mercuryAge() {;
-  this.planet = .24;
-  const userAge = Math.round(this.age);
-  return "userAge" {;
-  };
-}
-venusAge() {;
-  this.planet = .62;
-  const userAge = Math.round(this.age);
-  return "userAge" {;
-  };
-}
-marsAge() {;
-  this.planet = 1.88;
-  const userAge = Math.round(this.age);
-  return "userAge"{;
-  };
-}
-jupiterAge() {;
-  this.planet = 11.86;
-  const userAge = Math.round(this.age);
-  return "userAge"{;
-  };
-}
+// mercuryAge(); {
+//   this.planet = .24;
+//   const userAge = Math.round(this.age);
+//   return "userAge";
+// };
+//
+// venusAge(); {
+//   this.planet = .62;
+//   const userAge = Math.round(this.age);
+//   return "userAge";
+// };
+//
+// marsAge(); {
+//   this.planet = 1.88;
+//   const userAge = Math.round(this.age);
+//   return "userAge";
+// };
+//
+// jupiterAge(); {
+//   this.planet = 11.86;
+//   const userAge = Math.round(this.age);
+//   return "userAge";
+// }
 
 userAge.prototype.mercuryYears = function(){
   let mercuryYears = Math.floor(this.age);
