@@ -30,19 +30,19 @@ export function userAge(age) {
 // }
 
 userAge.prototype.mercuryYears = function(){
-  let mercuryYears = Math.floor(this.age);
+  let mercuryYears = Math.floor(.24);
   return mercuryYears;
 };
 userAge.prototype.venusYears = function(){
-  let venusYears = Math.floor(this.age);
+  let venusYears = Math.floor(.62);
   return venusYears;
 };
 userAge.prototype.marsYears = function(){
-  let marsYears = Math.floor(this.age);
+  let marsYears = Math.floor(1.88);
   return marsYears;
 };
 userAge.prototype.jupiterYears = function(){
-  let jupiterYears = Math.floor(this.age);
+  let jupiterYears = Math.floor(11.86);
   return jupiterYears;
 };
 
@@ -50,6 +50,7 @@ export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
   this.averageLifeExpectancy = averageLifeExpectancy;
   this.userAge = userAge;
 }
+
 ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
   let mercuryYears = Math.floor(this.lifeExpectancyInMercury / mercuryYears - this.userAge / mercuryYears);
   return mercuryYears;
