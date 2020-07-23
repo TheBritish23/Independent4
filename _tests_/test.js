@@ -1,28 +1,28 @@
 import { userAge } from './../src/age.js';
 
-// describe('userAge', () => {
-//
-// test ('The number you put in is multiplied by the number of the fuction', () => {
-//   var calculate = new userAge(99);
-//   console.log(calculate);
-//   expect(calculate.mercuryYears).toEqual(412);
-// });
-// test('should correctly return inputted age in Venus years', () => {
-//   var calculate = new userAge(99);
-//   console.log(calculate);
-//   expect(calculate.venusYears).toEqual(161);
-// });
-// test('should correctly return inputted age in Mars years', () => {
-//   var calculate = new userAge(99);
-//   console.log(calculate);
-//   expect(calculate.marsYears).toEqual(53);
-// });
-// test('should correctly return inputted age in Jupiter years', () => {
-//   var calculate = new userAge(99);
-//   console.log(calculate);
-//   expect(calculate.jupiterYears).toEqual(9);
-//  });
-// });
+describe('userAge', () => {
+
+test ('The number you put in is multiplied by the number of the fuction', () => {
+  var calculate = new userAge(99);
+  console.log(calculate);
+  expect(calculate.mercuryYears).toEqual(412);
+});
+test('should correctly return inputted age in Venus years', () => {
+  var calculate = new userAge(99);
+  console.log(calculate);
+  expect(calculate.venusYears).toEqual(161);
+});
+test('should correctly return inputted age in Mars years', () => {
+  var calculate = new userAge(99);
+  console.log(calculate);
+  expect(calculate.marsYears).toEqual(53);
+});
+test('should correctly return inputted age in Jupiter years', () => {
+  var calculate = new userAge(99);
+  console.log(calculate);
+  expect(calculate.jupiterYears).toEqual(9);
+ });
+});
 
 describe('LifeExpectancy', () => {
 
