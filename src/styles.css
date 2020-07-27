@@ -34,3 +34,23 @@ p {
 #form {
 text-align: center;
 }
+
+#mercOut {
+  text-align: center;
+  font-weight: bold;
+}
+
+#venOut {
+  text-align: center;
+  font-weight: bold;
+}
+
+#marOut {
+  text-align: center;
+  font-weight: bold;
+}
+
+#jupitOut {
+  text-align: center;
+  font-weight: bold;
+}
