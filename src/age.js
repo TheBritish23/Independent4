@@ -1,8 +1,13 @@
-export function userAge(age) {
+export function UserAge(age) {
+  this.age = age;
   this.mercuryYears = .24;
+  this.mercuryExpectancy;
   this.venusYears = .62;
+  this.venusExpectancy;
   this.marsYears = 1.88;
+  this.marsExpectancy;
   this.jupiterYears = 11.86;
+  this.jupiterExpectancy;
 }
 
 // mercuryAge(); {
@@ -29,41 +34,31 @@ export function userAge(age) {
 //   return "userAge";
 // }
 
-userAge.prototype.mercuryYears = function(){
-  let mercuryYears = Math.floor(.24);
-  return mercuryYears;
-};
-userAge.prototype.venusYears = function(){
-  let venusYears = Math.floor(.62);
-  return venusYears;
-};
-userAge.prototype.marsYears = function(){
-  let marsYears = Math.floor(1.88);
-  return marsYears;
-};
-userAge.prototype.jupiterYears = function(){
-  let jupiterYears = Math.floor(11.86);
-  return jupiterYears;
+UserAge.prototype.calculateAges = function(){
+  this.mercuryYears = Math.floor(this.age/.24);
+  this.venusYears = Math.floor(this.age/.62);
+  this.marsYears = Math.floor(this.age/1.88);
+  this.jupiterYears = Math.floor(this.age/11.86);
 };
 
-export function ExpectancyCalculator(averageLifeExpectancy, userAge) {
-  this.averageLifeExpectancy = averageLifeExpectancy;
-  this.userAge = userAge;
-}
-
-ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
-  let mercuryYears = Math.floor(this.lifeExpectancyInMercury / mercuryYears - this.userAge / mercuryYears);
-  return mercuryYears;
-};
-ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
-  let venusYears = Math.floor(this.lifeExpectancyInVenus / venusYears - this.userAge / venusYears);
-  return venusYears;
-};
-ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
-  let marsYears = Math.floor(this.lifeExpectancyInMars / marsYears - this.userAge / marsYears);
-  return marsYears;
-};
-ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
-  let jupiterYears = Math.floor(this.lifeExpectancyInJupiter / jupiterYears - this.userAge / jupiterYears);
-  return jupiterYears;
-};
+// export function ExpectancyCalculator(averagelifeExpectancy, userAge) {
+//   this.averagelifeExpectancy = averagelifeExpectancy;
+//   this.userAge = userAge;
+// }
+//
+// ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
+//   let mercuryYears = Math.floor(this.lifeExpectancyInMercury / mercYears - this.userAge / mercYears);
+//   return mercuryYears;
+// };
+// ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
+//   let venusYears = Math.floor(this.lifeExpectancyInVenus / venYears - this.userAge / venYears);
+//   return venusYears;
+// };
+// ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
+//   let marsYears = Math.floor(this.lifeExpectancyInMars / marYears - this.userAge / marYears);
+//   return marsYears;
+// };
+// ExpectancyCalculator.prototype.averagelifeExpectancy = function() {
+//   let jupiterYears = Math.floor(this.lifeExpectancyInJupiter / jupitYears - this.userAge / jupitYears);
+//   return jupiterYears;
+// };
