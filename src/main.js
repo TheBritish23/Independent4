@@ -15,11 +15,10 @@ $(document).ready(function(){
       const age = new UserAge(userAge);
       age.calculateAges();
       console.log(age);
-      // $("#output").text("this is a test");
-      $("#mercOut").text(age.mercuryYears);
-      $("#venOut").text(age.venusYears);
-      $("#marOut").text(age.marsYears);
-      $("#jupitOut").text(age.jupiterYears);
+      $("#mercOut").text("Your age on Mercury is" + " " + age.mercuryYears);
+      $("#venOut").text("Your age on Venus is" + " " + age.venusYears);
+      $("#marOut").text("Your age on Mars is" + " " + age.marsYears);
+      $("#jupitOut").text("Your age on Jupiter is" + " " + age.jupiterYears);
       // if (userAge < 100) {
       //   $("#young").text(age.averagelifeExpectancy(userAge));
       // } else {
