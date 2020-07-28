@@ -10,30 +10,6 @@ export function UserAge(age) {
   this.jupiterExpectancy;
 }
 
-// mercuryAge(); {
-//   this.planet = .24;
-//   const userAge = Math.round(this.age);
-//   return "userAge";
-// };
-//
-// venusAge(); {
-//   this.planet = .62;
-//   const userAge = Math.round(this.age);
-//   return "userAge";
-// };
-//
-// marsAge(); {
-//   this.planet = 1.88;
-//   const userAge = Math.round(this.age);
-//   return "userAge";
-// };
-//
-// jupiterAge(); {
-//   this.planet = 11.86;
-//   const userAge = Math.round(this.age);
-//   return "userAge";
-// }
-
 UserAge.prototype.calculateAges = function(){
   this.mercuryYears = Math.floor(this.age/.24);
   this.venusYears = Math.floor(this.age/.62);
