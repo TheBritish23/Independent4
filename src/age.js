@@ -1,12 +1,14 @@
 export function UserAge(age) {
   this.age = age;
-  this.mercuryYears = .24;
+  this.userExpectancy;
+  this.lifeExpectancy = 85;
+  this.mercuryYears;
   this.mercuryExpectancy;
-  this.venusYears = .62;
+  this.venusYears;
   this.venusExpectancy;
-  this.marsYears = 1.88;
+  this.marsYears;
   this.marsExpectancy;
-  this.jupiterYears = 11.86;
+  this.jupiterYears;
   this.jupiterExpectancy;
 }
 
@@ -15,6 +17,14 @@ UserAge.prototype.calculateAges = function(){
   this.venusYears = Math.floor(this.age/.62);
   this.marsYears = Math.floor(this.age/1.88);
   this.jupiterYears = Math.floor(this.age/11.86);
+};
+
+UserAge.prototype.calculateLife = function(){
+  this.userExpectancy = (this.lifeExpectancy - this.age);
+  this.mercuryExpectancy = Math.floor((this.lifeExpectancy/.24) - this.mercuryYears);
+  this.venusExpectancy = Math.floor((this.lifeExpectancy/.62) - this.venusYears);
+  this.marsExpectancy = Math.floor((this.lifeExpectancy/1.88) - this.marsYears);
+  this.jupiterYears = Math.floor((this.lifeExpectancy/11.86) - this.jupiterYears);
 };
 
 // export function ExpectancyCalculator(averagelifeExpectancy, userAge) {
