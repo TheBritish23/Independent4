@@ -31,6 +31,15 @@ test('should correctly return inputted age in Jupiter years', () => {
    expect(userAge.marsExpectancy).toEqual(0);
    expect(userAge.jupiterExpectancy).toEqual(0);
  });
+ test('should return negative number if user lives past life expectancy', () => {
+   var userAge = new UserAge(150);
+   userAge.calculateAges();
+   userAge.calculateLife();
+   expect(userAge.mercuryExpectancy).toBeLessThan(0);
+   expect(userAge.venusExpectancy).toBeLessThan(0);
+   expect(userAge.marsExpectancy).toBeLessThan(0);
+   expect(userAge.jupiterExpectancy).toBeLessThan(0);
+ });
  // test('should return number of Venus years past expectancy if Earth user enters age that is higher than life expectancy', () => {
  //   var userAge = new UserAge(85);
  //   userAge.calculateAges();

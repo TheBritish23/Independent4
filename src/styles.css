@@ -54,3 +54,23 @@ text-align: center;
   text-align: center;
   font-weight: bold;
 }
+
+#mercLife {
+  text-align: center;
+  font-weight: italic;
+}
+
+#venLife {
+  text-align: center;
+  font-weight: italic;
+}
+
+#marLife {
+  text-align: center;
+  font-weight: italic;
+}
+
+#jupitLife {
+  text-align: center;
+  font-weight: italic;
+}
