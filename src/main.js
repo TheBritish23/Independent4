@@ -14,6 +14,7 @@ $(document).ready(function(){
     } else {
       const age = new UserAge(userAge);
       age.calculateAges();
+      age.calculateLife();
       console.log(age);
       $("#mercOut").text("Your age on Mercury is" + " " + age.mercuryYears);
       $("#venOut").text("Your age on Venus is" + " " + age.venusYears);
