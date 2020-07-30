@@ -17,9 +17,17 @@ $(document).ready(function(){
       age.calculateLife();
       console.log(age);
       $("#mercOut").text("Your age on Mercury is" + " " + age.mercuryYears);
-      $("#mercLife").text("You have this long left on Mercury" + " " + age.mercuryExpectancy);
+      if (age.mercuryExpectancy < 0) {
+        $("#mercLife").text("You have lived " + Math.abs(age.mercuryExpectancy) + " years past your life expectancy ");
+      } else {
+        $("#mercLife").text("You have this long left on Mercury" + " " + age.mercuryExpectancy);
+      }
       $("#venOut").text("Your age on Venus is" + " " + age.venusYears);
-      $("#venLife").text("You have this long left on Venus" + " " + age.venusExpectancy);
+      if (age.venusExpectancy < 0) {
+        $("#venLife").text("You have lived " + Math.abs(age.venusExpectancy) + " years past your life expectancy ");
+      } else {
+        $("#venLife").text("You have this long left on Venus" + " " + age.venusExpectancy);
+      }
       $("#marOut").text("Your age on Mars is" + " " + age.marsYears);
       $("#marLife").text("You have this long left on Mars" + " " + age.marsExpectancy);
       $("#jupitOut").text("Your age on Jupiter is" + " " + age.jupiterYears);
