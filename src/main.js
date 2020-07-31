@@ -29,14 +29,22 @@ $(document).ready(function(){
         $("#venLife").text("You have this long left on Venus" + " " + age.venusExpectancy);
       }
       $("#marOut").text("Your age on Mars is" + " " + age.marsYears);
-      $("#marLife").text("You have this long left on Mars" + " " + age.marsExpectancy);
+      if (age.marsExpectancy < 0) {
+        $("#marLife").text("You have lived " + Math.abs(age.marsExpectancy) + " years past your life expectancy ");
+      } else {
+        $("#marLife").text("You have this long left on Mars" + " " + age.marsExpectancy);
+      }
       $("#jupitOut").text("Your age on Jupiter is" + " " + age.jupiterYears);
-      $("#jupitLife").text("You have this long left on Jupiter" + " " + age.jupiterExpectancy);
+      if (age.jupiterExpectancy < 0) {
+        $("#jupitLife").text("You have lived " + Math.abs(age.jupiterExpectancy) + " years past your life expectancy ");
+      } else {
+        $("#jupitLife").text("You have this long left on Jupiter" + " " + age.jupiterExpectancy);
       // if (userAge < 100) {
       //   $("#young").text(age.averagelifeExpectancy(userAge));
       // } else {
       //   return $("#old").text(age.averagelifeExpectancy(userAge));
       // }
+      }
     }
   });
 });
